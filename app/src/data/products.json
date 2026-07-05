@@ -19,8 +19,8 @@
           "price": 27.98,
           "variants": [
             { "id": "white", "label": "White", "swatch": "#f2f2f0", "image": "/images/cam-v4.png" },
-            { "id": "grey", "label": "Grey", "swatch": "#8a8a8a", "image": "/images/cam-v4.png" },
-            { "id": "black", "label": "Black", "swatch": "#1c1c1c", "image": "/images/cam-v4.png" }
+            { "id": "grey", "label": "Grey", "swatch": "#8a8a8a", "image": "/images/cam-pan-v3-thumb.png" },
+            { "id": "black", "label": "Black", "swatch": "#1c1c1c", "image": "/images/cam-v4-thumb.png" }
           ],
           "defaultVariant": "white",
           "initialQuantities": { "white": 1 }
@@ -37,7 +37,7 @@
           "price": 34.98,
           "variants": [
             { "id": "white", "label": "White", "swatch": "#f2f2f0", "image": "/images/cam-pan-v3.png" },
-            { "id": "black", "label": "Black", "swatch": "#1c1c1c", "image": "/images/cam-pan-v3.png" }
+            { "id": "black", "label": "Black", "swatch": "#1c1c1c", "image": "/images/cam-floodlight-v2-thumb.png" }
           ],
           "defaultVariant": "white",
           "initialQuantities": { "white": 2 }
