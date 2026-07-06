@@ -54,15 +54,6 @@ src/
 
 - **Logo/branding.** No hand-drawn or recreated Wyze wordmark/logo is used anywhere in the UI — any "WYZE" text visible is only what's baked into the real product photography supplied for this exercise (see below), not something added by this app.
 
-## Fixes in this pass
-
-- **Product card layout bug.** The card wrapper was a row `flex`, which put the image beside the text instead of above it. Changed to `flex-col` so cards stack image → title → description → variants → stepper/price, matching the Figma layout.
-- **Responsive breakpoint.** The builder/review panel switched to the two-column desktop layout at `md` (768px), which squeezed things too early. Moved that switch to `lg` (1024px) so there's a proper wide-but-still-stacked tablet state (full-width builder, full-width review panel below), and the "Let's get started!" mobile heading now hides at `sm` (640px) independently of that.
-- **Camera/sensor grid on tablet.** Added a `md:grid-cols-3` step so the product grid uses the extra width on tablet (before the layout goes two-column) instead of staying locked at 2 columns from phone all the way to desktop.
-- **Housekeeping.** Removed an empty, unused `App.css` and a duplicate `index.css` import (it was imported in both `main.jsx` and `App.jsx`).
-- **Real product photography.** All 15 image paths referenced in `products.json` (`public/images/`) are now the actual Wyze product photos supplied for this exercise, replacing an earlier pass's generated placeholders.
-- **Card layout switches with the page layout, not the card's own width.** The product card image sits on top (full width) whenever the page is in its single-column stacked mode — regardless of how many card columns are in the grid at that point — and only becomes a compact side-by-side thumbnail+text row once the page reaches `lg` and switches to the two-column builder+review layout. An earlier pass tried a CSS container query keyed to the card's own rendered width, which looked right at the exact two reference sizes but broke at in-between tablet widths where cards are wide yet the page is still single-column; keying off the same `lg` breakpoint as the page layout fixes that.
-- **Quantity stepper shape.** Fixed to a rounded rectangle (`rounded-lg`) matching the reference screenshots — it was previously a full pill (`rounded-full`).
 
 ## What's not finished
 
